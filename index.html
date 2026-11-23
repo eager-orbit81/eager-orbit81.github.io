@@ -1,0 +1,1630 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17.cn一起草每日大赛 - 官方视频门户 | 每日创作挑战与社区影像生态</title>
+<meta name="description" content="17.cn一起草每日大赛官方网站，面向创作者与企业的每日创作挑战视频社区，提供原创高清内容、赛事报名、作品展示与创作者成长支持。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101620'/%3E%3Cpath d='M20 18h10v28H20zM36 18l12 14-12 14V18z' fill='%23ff5a3c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --qc-ink:#101620;
+  --qc-ink-2:#1c2430;
+  --qc-ink-3:#2a3442;
+  --qc-line:#e4e7ec;
+  --qc-bg:#f7f8fa;
+  --qc-card:#ffffff;
+  --qc-fluo:#d8ff35;
+  --qc-coral:#ff5a3c;
+  --qc-text:#1d2430;
+  --qc-muted:#67707e;
+  --qc-radius:14px;
+  --qc-shadow:0 10px 30px rgba(16,22,32,.10);
+  --qc-head-h:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--qc-bg);
+  color:var(--qc-text);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+ul{list-style:none}
+.qc-wrap{width:min(1180px,92%);margin:0 auto}
+.qc-sec{padding:56px 0}
+.qc-anchor{scroll-margin-top:calc(var(--qc-head-h) + 16px)}
+.qc-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--qc-coral);font-weight:700;margin-bottom:10px;
+}
+.qc-eyebrow::before{content:"";width:22px;height:2px;background:var(--qc-coral)}
+.qc-h2{font-size:clamp(22px,3vw,32px);line-height:1.3;letter-spacing:-.01em;color:var(--qc-ink);font-weight:800}
+.qc-h2 em{font-style:normal;color:var(--qc-coral)}
+.qc-h3{font-size:18px;font-weight:700;color:var(--qc-ink);line-height:1.45}
+.qc-lead{color:var(--qc-muted);font-size:15px;max-width:70ch}
+.qc-sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+
+/* ===== 公告条 + 页头 ===== */
+.qc-sticky-shell{position:sticky;top:0;z-index:60;box-shadow:0 2px 0 rgba(16,22,32,.04)}
+.qc-notice{
+  background:var(--qc-ink);color:#e9edf3;font-size:13px;
+  display:flex;align-items:center;gap:12px;padding:9px 0;
+}
+.qc-notice .qc-wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.qc-notice-tag{
+  background:var(--qc-fluo);color:#101620;font-weight:800;font-size:11px;
+  padding:2px 8px;border-radius:4px;letter-spacing:.08em;flex:none;
+}
+.qc-notice-track{position:relative;flex:1;min-width:200px;overflow:hidden;height:20px}
+.qc-notice-item{
+  position:absolute;inset:0;opacity:0;transform:translateY(10px);
+  transition:opacity .4s,transform .4s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.qc-notice-item.qc-on{opacity:1;transform:translateY(0)}
+.qc-notice-item b{color:var(--qc-fluo);font-weight:700}
+.qc-notice-more{color:#aeb8c6;font-size:12px;flex:none;border-bottom:1px dashed #5b6674;padding-bottom:1px}
+.qc-header{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--qc-line)}
+.qc-header-in{display:flex;align-items:center;gap:24px;height:72px}
+.qc-logo{display:flex;align-items:center;gap:10px;flex:none}
+.qc-logo-mark{
+  width:38px;height:38px;border-radius:10px;background:var(--qc-ink);
+  display:grid;place-items:center;color:var(--qc-fluo);font-weight:900;font-size:16px;
+  letter-spacing:-.05em;
+}
+.qc-logo-text{display:flex;flex-direction:column;line-height:1.15}
+.qc-logo-text b{font-size:16px;color:var(--qc-ink);letter-spacing:-.01em}
+.qc-logo-text span{font-size:11px;color:var(--qc-muted);letter-spacing:.14em}
+.qc-nav{display:flex;gap:4px;margin-left:8px}
+.qc-nav a{
+  font-size:14px;color:var(--qc-ink-3);padding:8px 12px;border-radius:8px;
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.qc-nav a:hover{background:var(--qc-bg);color:var(--qc-ink)}
+.qc-header-tools{display:flex;align-items:center;gap:12px;margin-left:auto}
+.qc-search{position:relative}
+.qc-search input{
+  width:190px;height:38px;border:1px solid var(--qc-line);border-radius:999px;
+  padding:0 14px 0 36px;font-size:13px;background:var(--qc-bg);outline:none;
+  transition:border-color .2s,background .2s,width .25s;
+}
+.qc-search input:focus{border-color:var(--qc-ink);background:#fff;width:230px}
+.qc-search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:15px;height:15px;opacity:.5}
+.qc-search-hint{
+  position:absolute;top:46px;left:0;right:0;background:#fff;border:1px solid var(--qc-line);
+  border-radius:10px;box-shadow:var(--qc-shadow);font-size:13px;padding:8px;
+  display:none;z-index:70;
+}
+.qc-search-hint.qc-on{display:block}
+.qc-search-hint div{padding:6px 8px;border-radius:6px;color:var(--qc-muted)}
+.qc-search-hint div.qc-hit{background:var(--qc-bg);color:var(--qc-ink);font-weight:600}
+.qc-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  height:38px;padding:0 18px;border-radius:999px;font-size:13px;font-weight:700;
+  transition:transform .18s,box-shadow .18s,background .18s,color .18s;
+}
+.qc-btn:hover{transform:translateY(-1px)}
+.qc-btn-dark{background:var(--qc-ink);color:#fff}
+.qc-btn-dark:hover{box-shadow:0 10px 22px rgba(16,22,32,.28)}
+.qc-btn-fluo{background:var(--qc-fluo);color:var(--qc-ink)}
+.qc-btn-fluo:hover{box-shadow:0 10px 22px rgba(216,255,53,.45)}
+.qc-btn-line{border:1px solid var(--qc-line);color:var(--qc-ink);background:#fff}
+.qc-btn-line:hover{border-color:var(--qc-ink-3)}
+.qc-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--qc-line);background:#fff;place-items:center}
+.qc-burger span{display:block;width:18px;height:2px;background:var(--qc-ink);margin:3px 0;transition:transform .25s,opacity .25s}
+.qc-mobile-nav{display:none;border-bottom:1px solid var(--qc-line);background:#fff}
+.qc-mobile-nav.qc-open{display:block}
+.qc-mobile-nav a{display:block;padding:12px 0;border-bottom:1px dashed var(--qc-line);font-size:14px}
+.qc-mobile-nav a:last-child{border-bottom:none}
+
+/* ===== 首屏 ===== */
+.qc-hero{background:linear-gradient(180deg,#fff 0%,#f2f4f7 100%);border-bottom:1px solid var(--qc-line);overflow:hidden}
+.qc-hero-in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:44px;align-items:center;padding:56px 0 60px}
+.qc-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:var(--qc-ink);color:#fff;
+  font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:.06em;margin-bottom:18px;
+}
+.qc-hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--qc-fluo);display:block}
+.qc-hero h1{
+  font-size:clamp(30px,4.4vw,52px);line-height:1.14;font-weight:900;letter-spacing:-.02em;
+  color:var(--qc-ink);word-break:break-word;
+}
+.qc-hero h1 .qc-h1-sub{display:block;font-size:clamp(15px,1.7vw,20px);font-weight:600;color:var(--qc-muted);margin-top:12px;letter-spacing:0}
+.qc-hero-desc{margin-top:20px;font-size:15px;color:var(--qc-ink-3);max-width:54ch}
+.qc-hero-desc b{color:var(--qc-ink)}
+.qc-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.qc-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px;border-top:1px solid var(--qc-line);padding-top:22px}
+.qc-hero-stats div b{display:block;font-size:clamp(20px,2.4vw,28px);font-weight:900;color:var(--qc-ink);letter-spacing:-.02em}
+.qc-hero-stats div span{font-size:12px;color:var(--qc-muted)}
+.qc-hero-visual{position:relative}
+.qc-hero-visual .qc-hero-frame{
+  border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(16,22,32,.22);
+  border:6px solid #fff;background:#fff;
+}
+.qc-hero-frame svg{width:100%;height:auto;aspect-ratio:16/12}
+.qc-hero-float{
+  position:absolute;left:-16px;bottom:22px;background:#fff;border-radius:12px;
+  padding:10px 14px;box-shadow:var(--qc-shadow);display:flex;align-items:center;gap:10px;
+  font-size:12px;color:var(--qc-ink-3);max-width:82%;
+}
+.qc-hero-float b{color:var(--qc-ink);font-size:13px;display:block}
+.qc-hero-float .qc-dot{width:34px;height:34px;border-radius:10px;background:var(--qc-fluo);display:grid;place-items:center;font-weight:900;color:var(--qc-ink);flex:none}
+
+/* ===== 品牌解析 ===== */
+.qc-about{background:#fff;border-bottom:1px solid var(--qc-line)}
+.qc-about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:44px;align-items:flex-start}
+.qc-about-aside{
+  background:var(--qc-ink);color:#e9edf3;border-radius:var(--qc-radius);padding:26px;
+  position:relative;overflow:hidden;
+}
+.qc-about-aside::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;
+  border-radius:50%;background:radial-gradient(circle,rgba(216,255,53,.35),transparent 70%);
+}
+.qc-about-aside h3{font-size:17px;color:#fff;margin-bottom:12px}
+.qc-about-aside p{font-size:13.5px;color:#b7c0cd;line-height:1.8}
+.qc-about-aside ul{margin-top:16px;display:grid;gap:8px}
+.qc-about-aside li{font-size:13px;color:#d4dbe5;display:flex;gap:8px;align-items:flex-start}
+.qc-about-aside li::before{content:"▸";color:var(--qc-fluo);flex:none}
+.qc-about-body p{font-size:15px;color:var(--qc-ink-3);margin-bottom:16px}
+.qc-about-body .qc-h3{margin:22px 0 10px}
+.qc-about-body .qc-h3:first-of-type{margin-top:0}
+.qc-keyword-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:22px}
+.qc-keyword-grid div{background:var(--qc-bg);border:1px solid var(--qc-line);border-radius:10px;padding:14px}
+.qc-keyword-grid b{display:block;font-size:13px;color:var(--qc-ink);margin-bottom:4px}
+.qc-keyword-grid span{font-size:12.5px;color:var(--qc-muted);line-height:1.6}
+
+/* ===== 焦点内容 ===== */
+.qc-feature{background:var(--qc-bg)}
+.qc-feature-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px;align-items:stretch}
+.qc-focus-card{
+  background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--qc-line);
+  box-shadow:var(--qc-shadow);display:flex;flex-direction:column;
+}
+.qc-focus-card svg{width:100%;height:auto;aspect-ratio:16/9}
+.qc-focus-body{padding:22px 24px 24px}
+.qc-focus-body .qc-h3{font-size:20px;margin-bottom:10px}
+.qc-focus-body p{font-size:14px;color:var(--qc-muted);margin-bottom:14px}
+.qc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.qc-tag{font-size:11.5px;background:var(--qc-bg);border:1px solid var(--qc-line);color:var(--qc-ink-3);padding:2px 9px;border-radius:999px}
+.qc-meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-size:12.5px;color:var(--qc-muted)}
+.qc-meta b{color:var(--qc-ink);font-weight:700}
+.qc-ops{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;padding-top:16px;border-top:1px solid var(--qc-line)}
+.qc-op{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--qc-muted);
+  padding:6px 12px;border-radius:999px;border:1px solid var(--qc-line);background:#fff;transition:.18s;
+}
+.qc-op:hover{border-color:var(--qc-ink-3);color:var(--qc-ink)}
+.qc-op.qc-liked{border-color:var(--qc-coral);color:var(--qc-coral);background:#fff5f2}
+.qc-op.qc-saved{border-color:var(--qc-ink);color:var(--qc-ink);background:var(--qc-bg)}
+.qc-op i{font-style:normal}
+.qc-side-list{display:flex;flex-direction:column;gap:12px}
+.qc-side-item{
+  background:#fff;border:1px solid var(--qc-line);border-radius:12px;padding:16px 18px;
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;transition:.2s;
+}
+.qc-side-item:hover{transform:translateX(3px);border-color:#cdd3db}
+.qc-side-num{
+  width:34px;height:34px;border-radius:9px;background:var(--qc-ink);color:var(--qc-fluo);
+  display:grid;place-items:center;font-weight:900;font-size:13px;flex:none;
+}
+.qc-side-item h4{font-size:14.5px;color:var(--qc-ink);font-weight:700;line-height:1.5;margin-bottom:4px}
+.qc-side-item p{font-size:12.5px;color:var(--qc-muted);line-height:1.65}
+.qc-side-item .qc-meta{margin-top:8px;font-size:12px;gap:10px}
+
+/* ===== 视频流（三列卡片） ===== */
+.qc-videos{background:#fff;border-top:1px solid var(--qc-line);border-bottom:1px solid var(--qc-line)}
+.qc-filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.qc-filter{
+  font-size:13px;padding:7px 16px;border-radius:999px;border:1px solid var(--qc-line);
+  background:#fff;color:var(--qc-ink-3);transition:.18s;
+}
+.qc-filter:hover{border-color:var(--qc-ink-3)}
+.qc-filter.qc-active{background:var(--qc-ink);color:#fff;border-color:var(--qc-ink)}
+.qc-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.qc-video-card{
+  background:#fff;border:1px solid var(--qc-line);border-radius:14px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;
+}
+.qc-video-card:hover{transform:translateY(-4px);box-shadow:var(--qc-shadow)}
+.qc-video-thumb{position:relative;background:#eef1f5}
+.qc-video-thumb svg{width:100%;height:auto;aspect-ratio:16/9}
+.qc-video-dur{
+  position:absolute;right:10px;bottom:10px;background:rgba(16,22,32,.82);color:#fff;
+  font-size:11px;padding:2px 7px;border-radius:4px;letter-spacing:.02em;
+}
+.qc-video-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;color:var(--qc-ink);font-size:14px;
+  box-shadow:0 6px 18px rgba(16,22,32,.22);
+}
+.qc-video-body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.qc-video-body h3{font-size:15px;color:var(--qc-ink);font-weight:700;line-height:1.5;margin-bottom:8px}
+.qc-video-body p{font-size:13px;color:var(--qc-muted);line-height:1.7;flex:1}
+.qc-video-body .qc-tags{margin:10px 0 8px}
+.qc-video-body .qc-meta{font-size:12px}
+.qc-video-body .qc-ops{margin-top:12px;padding-top:12px;gap:8px}
+
+/* ===== 专题 ===== */
+.qc-topics{background:var(--qc-bg)}
+.qc-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.qc-topic{
+  background:#fff;border:1px solid var(--qc-line);border-radius:14px;padding:22px;
+  display:flex;flex-direction:column;transition:.2s;
+}
+.qc-topic:hover{border-color:#cdd3db;box-shadow:var(--qc-shadow)}
+.qc-topic-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.qc-topic-status{font-size:11px;padding:2px 8px;border-radius:999px;background:#eef7d8;color:#44610a;font-weight:700;flex:none}
+.qc-topic-status.qc-soon{background:#fdeee9;color:#a33a22}
+.qc-topic h3{font-size:17px;color:var(--qc-ink);font-weight:800;line-height:1.45;margin-bottom:8px}
+.qc-topic > p{font-size:13px;color:var(--qc-muted);line-height:1.75;margin-bottom:14px}
+.qc-topic-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--qc-line);margin-top:auto}
+.qc-topic-list li{font-size:13px;color:var(--qc-ink-3);padding:10px 0;border-bottom:1px dashed var(--qc-line);display:flex;gap:8px;align-items:baseline}
+.qc-topic-list li:last-child{border-bottom:none}
+.qc-topic-list li b{font-size:11px;color:var(--qc-coral);font-weight:800;flex:none}
+
+/* ===== 创作者（双列简介） ===== */
+.qc-authors{background:#fff;border-top:1px solid var(--qc-line);border-bottom:1px solid var(--qc-line)}
+.qc-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.qc-author{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;
+  background:var(--qc-bg);border:1px solid var(--qc-line);border-radius:14px;padding:20px;transition:.2s;
+}
+.qc-author:hover{background:#fff;box-shadow:var(--qc-shadow)}
+.qc-avatar{
+  width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+  font-weight:900;font-size:20px;color:#fff;flex:none;letter-spacing:-.02em;
+}
+.qc-author-main b{font-size:15px;color:var(--qc-ink);display:block}
+.qc-author-main .qc-field{font-size:12px;color:var(--qc-coral);font-weight:700;letter-spacing:.02em}
+.qc-author-main p{font-size:13px;color:var(--qc-muted);line-height:1.75;margin:8px 0 10px}
+.qc-author-stats{display:flex;gap:16px;font-size:12px;color:var(--qc-muted)}
+.qc-author-stats b{color:var(--qc-ink);font-weight:800}
+.qc-author-ops{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+
+/* ===== 榜单 + 评价（评分摘要风格） ===== */
+.qc-rank{background:var(--qc-bg)}
+.qc-rank-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:start}
+.qc-rank-panel{background:#fff;border:1px solid var(--qc-line);border-radius:16px;padding:22px}
+.qc-rank-panel > h3{font-size:16px;margin-bottom:14px;color:var(--qc-ink)}
+.qc-rank-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 0;border-bottom:1px dashed var(--qc-line)}
+.qc-rank-row:last-child{border-bottom:none}
+.qc-rank-no{width:24px;height:24px;border-radius:6px;background:var(--qc-bg);display:grid;place-items:center;font-size:12px;font-weight:800;color:var(--qc-ink)}
+.qc-rank-row:nth-child(1) .qc-rank-no{background:var(--qc-fluo);color:var(--qc-ink)}
+.qc-rank-info b{font-size:13.5px;color:var(--qc-ink);display:block;font-weight:700;line-height:1.5}
+.qc-rank-info span{font-size:11.5px;color:var(--qc-muted)}
+.qc-rank-val{font-size:12px;color:var(--qc-coral);font-weight:800;white-space:nowrap}
+.qc-score-panel{background:#fff;border:1px solid var(--qc-line);border-radius:16px;padding:22px}
+.qc-score-summary{display:flex;align-items:center;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--qc-line);margin-bottom:16px;flex-wrap:wrap}
+.qc-score-big{font-size:46px;font-weight:900;color:var(--qc-ink);line-height:1;letter-spacing:-.03em}
+.qc-score-big small{font-size:14px;color:var(--qc-muted);font-weight:600}
+.qc-score-bars{flex:1;min-width:180px;display:grid;gap:6px}
+.qc-bar{display:grid;grid-template-columns:38px minmax(0,1fr) 30px;gap:8px;align-items:center;font-size:11.5px;color:var(--qc-muted)}
+.qc-bar-track{height:6px;background:var(--qc-bg);border-radius:999px;overflow:hidden}
+.qc-bar-fill{height:100%;background:var(--qc-ink);border-radius:999px}
+.qc-quote{
+  border-left:3px solid var(--qc-coral);padding:6px 0 6px 14px;margin-bottom:16px;
+  font-size:13.5px;color:var(--qc-ink-3);line-height:1.8;
+}
+.qc-quote span{display:block;font-size:12px;color:var(--qc-muted);margin-top:6px}
+.qc-review-list{display:grid;gap:12px}
+.qc-review{border-bottom:1px dashed var(--qc-line);padding-bottom:12px}
+.qc-review:last-child{border-bottom:none;padding-bottom:0}
+.qc-review-top{display:flex;align-items:center;gap:8px;font-size:12.5px;margin-bottom:4px;flex-wrap:wrap}
+.qc-review-top b{color:var(--qc-ink);font-weight:700}
+.qc-review-top em{font-style:normal;color:#c8912a;letter-spacing:1px;font-size:11px}
+.qc-review p{font-size:13px;color:var(--qc-muted);line-height:1.75}
+
+/* ===== 企业动态 / 合作 / FAQ ===== */
+.qc-aux{background:#fff;border-top:1px solid var(--qc-line)}
+.qc-aux-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:start}
+.qc-news-item{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px dashed var(--qc-line)}
+.qc-news-item:first-child{padding-top:0}
+.qc-news-item:last-child{border-bottom:none;padding-bottom:0}
+.qc-news-date{background:var(--qc-bg);border:1px solid var(--qc-line);border-radius:9px;padding:6px 9px;text-align:center;flex:none;min-width:56px}
+.qc-news-date b{display:block;font-size:15px;color:var(--qc-ink);line-height:1.2}
+.qc-news-date span{font-size:10.5px;color:var(--qc-muted)}
+.qc-news-item h4{font-size:14px;color:var(--qc-ink);font-weight:700;line-height:1.5;margin-bottom:3px}
+.qc-news-item p{font-size:12.5px;color:var(--qc-muted);line-height:1.65}
+.qc-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:8px}
+.qc-partner{
+  border:1px solid var(--qc-line);border-radius:10px;padding:14px 12px;background:var(--qc-bg);
+  text-align:center;font-size:13px;font-weight:700;color:var(--qc-ink-3);transition:.2s;
+}
+.qc-partner:hover{background:#fff;border-color:var(--qc-ink-3);color:var(--qc-ink)}
+.qc-partner small{display:block;font-size:11px;color:var(--qc-muted);font-weight:400;margin-top:2px}
+.qc-faq{margin-top:8px}
+.qc-faq details{border-bottom:1px solid var(--qc-line);padding:4px 0}
+.qc-faq summary{
+  cursor:pointer;list-style:none;padding:13px 24px 13px 0;position:relative;
+  font-size:14px;font-weight:700;color:var(--qc-ink);line-height:1.6;
+}
+.qc-faq summary::-webkit-details-marker{display:none}
+.qc-faq summary::after{
+  content:"+";position:absolute;right:2px;top:50%;transform:translateY(-50%);
+  font-size:18px;color:var(--qc-muted);font-weight:400;transition:transform .2s;
+}
+.qc-faq details[open] summary::after{content:"−"}
+.qc-faq details p{font-size:13px;color:var(--qc-muted);line-height:1.8;padding:0 0 14px;max-width:62ch}
+
+/* ===== CTA ===== */
+.qc-cta{background:var(--qc-ink);color:#fff;padding:52px 0;position:relative;overflow:hidden}
+.qc-cta::before{
+  content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;
+  background:radial-gradient(circle,rgba(216,255,53,.22),transparent 68%);
+}
+.qc-cta-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;position:relative}
+.qc-cta h2{font-size:clamp(20px,2.8vw,30px);font-weight:900;letter-spacing:-.01em;line-height:1.35;max-width:22ch}
+.qc-cta p{font-size:13.5px;color:#aeb8c6;margin-top:8px;max-width:46ch}
+.qc-cta-actions{display:flex;gap:12px;flex-wrap:wrap}
+.qc-cta .qc-btn-line{background:transparent;border-color:#48525f;color:#fff}
+.qc-cta .qc-btn-line:hover{border-color:#fff}
+
+/* ===== 页脚 ===== */
+.qc-footer{background:#0b1118;color:#9aa4b2;padding:52px 0 0;font-size:13px}
+.qc-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px}
+.qc-footer h4{color:#fff;font-size:13.5px;margin-bottom:14px;font-weight:700;letter-spacing:.04em}
+.qc-footer li{padding:5px 0}
+.qc-footer a{color:#9aa4b2;transition:color .18s}
+.qc-footer a:hover{color:var(--qc-fluo)}
+.qc-footer-brand p{font-size:12.5px;line-height:1.9;max-width:38ch;margin-top:12px;color:#7f8a99}
+.qc-footer-logo{display:flex;align-items:center;gap:10px;color:#fff}
+.qc-footer-logo .qc-logo-mark{background:#1c2430;color:var(--qc-fluo)}
+.qc-footer-bottom{
+  border-top:1px solid #1d252f;padding:18px 0;display:flex;flex-wrap:wrap;gap:12px;
+  align-items:center;justify-content:space-between;font-size:12px;color:#67707e;
+}
+.qc-footer-bottom span{display:inline-block}
+
+/* ===== 弹窗 / Toast / 回顶 ===== */
+.qc-modal-mask{
+  position:fixed;inset:0;background:rgba(11,17,24,.55);backdrop-filter:blur(3px);
+  z-index:200;display:none;align-items:center;justify-content:center;padding:20px;
+}
+.qc-modal-mask.qc-on{display:flex}
+.qc-modal{
+  background:#fff;border-radius:16px;max-width:520px;width:100%;padding:26px 26px 24px;
+  box-shadow:0 30px 80px rgba(0,0,0,.35);max-height:86vh;overflow:auto;animation:qcPop .22s ease;
+}
+@keyframes qcPop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+.qc-modal h3{font-size:18px;color:var(--qc-ink);margin-bottom:12px}
+.qc-modal p{font-size:13.5px;color:var(--qc-muted);line-height:1.8;margin-bottom:12px}
+.qc-modal label{display:block;font-size:12.5px;color:var(--qc-ink-3);margin-bottom:6px;font-weight:700}
+.qc-modal input,.qc-modal textarea,.qc-modal select{
+  width:100%;border:1px solid var(--qc-line);border-radius:9px;padding:10px 12px;font-size:13px;
+  outline:none;margin-bottom:14px;background:var(--qc-bg);
+}
+.qc-modal textarea{resize:vertical;min-height:88px}
+.qc-modal input:focus,.qc-modal textarea:focus,.qc-modal select:focus{border-color:var(--qc-ink);background:#fff}
+.qc-modal-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+.qc-modal-close{position:sticky;top:0;float:right;font-size:20px;color:var(--qc-muted);line-height:1;padding:2px 4px}
+.qc-modal-close:hover{color:var(--qc-ink)}
+.qc-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);background:var(--qc-ink);
+  color:#fff;font-size:13px;padding:11px 20px;border-radius:999px;z-index:300;
+  opacity:0;pointer-events:none;transition:.25s;box-shadow:0 14px 34px rgba(0,0,0,.3);
+  max-width:88vw;text-align:center;
+}
+.qc-toast.qc-on{opacity:1;transform:translate(-50%,0)}
+.qc-totop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--qc-ink);color:var(--qc-fluo);display:grid;place-items:center;z-index:90;
+  opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;box-shadow:0 10px 26px rgba(16,22,32,.3);
+  font-size:16px;
+}
+.qc-totop.qc-on{opacity:1;pointer-events:auto;transform:none}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .qc-hero-in{grid-template-columns:minmax(0,1fr);gap:32px;padding:40px 0 44px}
+  .qc-about-grid{grid-template-columns:minmax(0,1fr);gap:26px}
+  .qc-feature-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qc-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qc-rank-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-aux-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-footer-grid{grid-template-columns:1fr 1fr}
+  .qc-nav{display:none}
+  .qc-burger{display:grid}
+  .qc-search input{width:150px}
+  .qc-search input:focus{width:170px}
+}
+@media (max-width:760px){
+  :root{--qc-head-h:112px}
+  .qc-header-in{height:64px;gap:12px}
+  .qc-search{display:none}
+  .qc-header-tools .qc-btn-dark{display:none}
+  .qc-hero-in{padding:32px 0 38px}
+  .qc-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  .qc-hero-stats div b{font-size:20px}
+  .qc-video-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-topic-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-author-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-keyword-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qc-footer-grid{grid-template-columns:minmax(0,1fr)}
+  .qc-sec{padding:40px 0}
+  .qc-notice{font-size:12px}
+  .qc-hero-float{left:8px;bottom:10px;font-size:11px;padding:8px 11px}
+  .qc-cta{padding:40px 0}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="qc-sticky-shell">
+  <div class="qc-notice" aria-label="站内公告">
+    <div class="qc-wrap">
+      <span class="qc-notice-tag">官方发布</span>
+      <div class="qc-notice-track" id="qcNoticeTrack">
+        <div class="qc-notice-item qc-on"><b>第47期「一起草每日大赛」</b>已开放报名，主题「冬日的第一帧」，11月25日 20:00 截稿，上传通道同步开启。</div>
+        <div class="qc-notice-item"><b>新人扶持计划</b>新增 60 个推荐位，首次投稿作品可获得首页「今日新芽」曝光。</div>
+        <div class="qc-notice-item"><b>官方攻略更新</b>：60 秒叙事脚本模板、手机运镜清单已上线下载中心。</div>
+        <div class="qc-notice-item"><b>社区投票</b>「年度最打动人的日常影像」进入第二轮，投票截止 11月30日。</div>
+      </div>
+      <a class="qc-notice-more" href="#qc-dynamics">全部动态</a>
+    </div>
+  </div>
+
+  <header class="qc-header">
+    <div class="qc-wrap qc-header-in">
+      <a class="qc-logo" href="#qc-top" aria-label="17.cn一起草每日大赛首页">
+        <span class="qc-logo-mark">17</span>
+        <span class="qc-logo-text">
+          <b>17.cn 一起草每日大赛</b>
+          <span>DAILY CREATE ARENA</span>
+        </span>
+      </a>
+      <nav class="qc-nav" aria-label="主导航">
+        <a href="#qc-focus">焦点</a>
+        <a href="#qc-videos">视频</a>
+        <a href="#qc-topics">专题企划</a>
+        <a href="#qc-authors">创作者</a>
+        <a href="#qc-rank">榜单口碑</a>
+        <a href="#qc-dynamics">企业动态</a>
+      </nav>
+      <div class="qc-header-tools">
+        <div class="qc-search">
+          <svg class="qc-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="qcSearchInput" placeholder="搜索作品 / 作者 / 专题" aria-label="站内搜索">
+          <div class="qc-search-hint" id="qcSearchHint"></div>
+        </div>
+        <button class="qc-btn qc-btn-fluo" type="button" data-qc-modal="submit">投稿报名</button>
+        <button class="qc-btn qc-btn-dark" type="button" data-qc-modal="join">加入社区</button>
+        <button class="qc-burger" id="qcBurger" type="button" aria-label="展开菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="qc-mobile-nav" id="qcMobileNav">
+      <div class="qc-wrap">
+        <a href="#qc-focus">焦点内容</a>
+        <a href="#qc-videos">今日视频</a>
+        <a href="#qc-topics">专题企划</a>
+        <a href="#qc-authors">创作者矩阵</a>
+        <a href="#qc-rank">榜单与口碑</a>
+        <a href="#qc-dynamics">企业动态与合作</a>
+        <a href="#qc-faq">常见问题</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="qc-top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="qc-hero">
+    <div class="qc-wrap qc-hero-in">
+      <div>
+        <span class="qc-hero-badge"><i></i>官方网站 · 每日创作挑战持续运营中</span>
+        <h1>17.cn一起草每日大赛<span class="qc-h1-sub">每天一个题目，把灵感拍成作品</span></h1>
+        <p class="qc-hero-desc">
+          我们是聚焦「每日创作挑战」的视频品牌与内容社区：<b>17.cn一起草每日大赛官方网站</b>为创作者提供命题、工具、曝光与成长通道，
+          也为企业品牌搭建高品质的原创新闻与影像内容生态。从第 1 期到第 47 期，我们坚持命题公开、评审透明、作品正版高清，
+          让每一次上传都成为被看见的起点。
+        </p>
+        <div class="qc-hero-actions">
+          <a class="qc-btn qc-btn-dark" href="#qc-videos">看今日作品</a>
+          <a class="qc-btn qc-btn-line" href="#qc-topics">查看赛题与专题</a>
+          <button class="qc-btn qc-btn-line" type="button" data-qc-modal="submit">立即投稿</button>
+        </div>
+        <div class="qc-hero-stats">
+          <div><b>47 期</b><span>连续运营的每日赛题</span></div>
+          <div><b>12,860+</b><span>累计上传作品数</span></div>
+          <div><b>3,240 位</b><span>实名认证创作者</span></div>
+        </div>
+      </div>
+      <div class="qc-hero-visual">
+        <div class="qc-hero-frame">
+          <svg viewBox="0 0 640 480" role="img" aria-label="17.cn一起草每日大赛首屏主视觉：深色创作工作台与橙绿双色影像窗口">
+            <defs>
+              <linearGradient id="qcHeroBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#141b26"/><stop offset="1" stop-color="#2b3444"/>
+              </linearGradient>
+              <linearGradient id="qcHeroWin" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff5a3c"/><stop offset="1" stop-color="#d8ff35"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="480" fill="url(#qcHeroBg)"/>
+            <circle cx="512" cy="96" r="120" fill="#d8ff35" opacity="0.10"/>
+            <circle cx="96" cy="404" r="150" fill="#ff5a3c" opacity="0.12"/>
+            <rect x="64" y="72" width="512" height="264" rx="16" fill="#0c121b" stroke="#3b4657"/>
+            <rect x="84" y="92" width="472" height="200" rx="10" fill="url(#qcHeroWin)" opacity="0.9"/>
+            <path d="M290 158l58 34-58 34z" fill="#0c121b" opacity="0.85"/>
+            <rect x="84" y="304" width="140" height="10" rx="5" fill="#d8ff35" opacity="0.85"/>
+            <rect x="240" y="304" width="86" height="10" rx="5" fill="#5b6674"/>
+            <rect x="342" y="304" width="54" height="10" rx="5" fill="#5b6674"/>
+            <rect x="64" y="368" width="170" height="56" rx="10" fill="#1c2430" stroke="#3b4657"/>
+            <rect x="84" y="386" width="86" height="8" rx="4" fill="#d8ff35"/>
+            <rect x="84" y="402" width="130" height="6" rx="3" fill="#5b6674"/>
+            <rect x="252" y="368" width="150" height="56" rx="10" fill="#1c2430" stroke="#3b4657"/>
+            <rect x="272" y="386" width="60" height="8" rx="4" fill="#ff5a3c"/>
+            <rect x="272" y="402" width="110" height="6" rx="3" fill="#5b6674"/>
+            <rect x="420" y="368" width="156" height="56" rx="10" fill="#1c2430" stroke="#3b4657"/>
+            <circle cx="444" cy="396" r="12" fill="#d8ff35"/>
+            <rect x="466" y="388" width="90" height="7" rx="3.5" fill="#8b95a4"/>
+            <rect x="466" y="402" width="60" height="6" rx="3" fill="#5b6674"/>
+          </svg>
+        </div>
+        <div class="qc-hero-float">
+          <span class="qc-dot">47</span>
+          <div><b>第 47 期赛题开放中</b>冬日的第一帧 · 已收 386 份作品</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 / 品牌介绍 M15 -->
+  <section class="qc-sec qc-about qc-anchor" id="qc-about">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">Brand Story &amp; Depth</span>
+          <h2 class="qc-h2">我们如何理解<em>每日创作</em>这件事</h2>
+        </div>
+        <p class="qc-lead">一家视频品牌的深度，不在于片库有多大，而在于它是否愿意每天给创作者一个清晰的起点。</p>
+      </div>
+      <div class="qc-about-grid">
+        <aside class="qc-about-aside">
+          <h3>品牌档案</h3>
+          <p>17.cn一起草每日大赛是面向大众创作者的视频内容品牌，官方网站承载赛题发布、作品展示、创作者档案与社区互动四大板块，坚持原创、正版、高清的内容标准。</p>
+          <ul>
+            <li>创立年份：2021 年，连续运营 47 期赛题</li>
+            <li>内容方向：日常记录 · 城市探索 · 创作幕后</li>
+            <li>评审机制：大众投票 40% + 专业评审 60%</li>
+            <li>服务对象：独立创作者、企业品牌、院校社群</li>
+          </ul>
+        </aside>
+        <div class="qc-about-body">
+          <h3 class="qc-h3">从一条赛题到一套内容机制</h3>
+          <p>
+            2021 年秋天，17.cn一起草每日大赛发布第一条赛题「今天你路过的第 7 个路口」。当时团队只有 6 个人，一条赛题、一张海报、一个投稿邮箱，
+            却在一周内收到 219 份作品。五年过去，这条起点变成了一套完整的机制：每天上午 9 点发布赛题，创作者在 72 小时内完成上传，
+            次周公布评审结果，优秀作品进入官方网站的「精品内容」展映区，并同步进入创作者档案。作为持续运营的视频品牌，
+            我们更在意的不是流量峰值，而是创作者能否在命题中找到自己的表达角度。
+          </p>
+          <h3 class="qc-h3">官方网站的三条底线</h3>
+          <p>
+            第一是正版与原创。所有进入展映区的视频均由作者本人上传并签署原创声明，官方网站不接受搬运与二创未授权内容；
+            第二是高清与可看性。我们为上传作品提供码率建议与压缩工具，保证在移动端观看时画面细节不丢失；
+            第三是评审透明。每一期赛题都会公布评审名单、评分维度与投票数据摘要，社区可以追溯一个作品为何被推荐。
+            这三条底线构成了我们所说的「值得信赖」——不是口号，而是可以被检查的流程。
+          </p>
+          <h3 class="qc-h3">垂直领域里的社区温度</h3>
+          <p>
+            每日大赛并不是一个冷冰冰的比赛系统。在垂直领域里，我们更像一个固定的创作班：每周三的「创作门诊」直播里，编辑会拆解 3 份投稿的脚本结构；
+            每月末的「一起草夜谈」邀请 4 位创作者连麦，聊失败的拍摄、被推翻的剪辑和重新开始的勇气。社区里有正在备考的高中生，
+            有下班后拍地铁的通勤族，也有把乡村老屋拍成系列作品的手作人。他们的作品不一定完美，但都真实。
+            我们相信，真实和陪伴本身就是内容生态里最稀缺的部分，而一个视频品牌的长期影响力，正来自这些具体的人和具体的日子。
+          </p>
+          <h3 class="qc-h3">面向企业的内容服务与社会责任</h3>
+          <p>
+            对合作企业，官方网站提供命题共创、品牌纪录片策划与创作者联动三种服务。过去一年，我们与 8 个品牌完成了 14 组命题合作，
+            把商品叙事转化为创作者视角的生活观察；同时，我们保留每期 10% 的推荐位给公益主题作品，包括乡村教育、非遗手作与城市公共空间记录。
+            作为一家有社会责任意识的视频企业，我们每年向院校与社区免费开放 12 场影像工作坊，并发布可下载的拍摄攻略与剪辑清单。
+            我们始终认为：行业领先不只是数据上的领先，而是让更多人获得表达的能力。
+          </p>
+          <div class="qc-keyword-grid">
+            <div><b>每日命题</b><span>上午 9 点准时发布，72 小时创作窗口，节奏稳定不内卷。</span></div>
+            <div><b>原创正版</b><span>原创声明 + 授权链路，作品可用于官方展映与品牌合作。</span></div>
+            <div><b>成长通道</b><span>新人推荐位、创作门诊、评审反馈，三层成长支持。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容 -->
+  <section class="qc-sec qc-feature qc-anchor" id="qc-focus">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">Daily Focus</span>
+          <h2 class="qc-h2">今日焦点 · 第 47 期<em>命题精选</em></h2>
+        </div>
+        <p class="qc-lead">「冬日的第一帧」命题下，编辑从 386 份作品中挑出 3 组不同气质的影像，它们共同回答了同一个问题：冷，也可以很温柔。</p>
+      </div>
+      <div class="qc-feature-grid">
+        <article class="qc-focus-card">
+          <svg viewBox="0 0 640 360" role="img" aria-label="焦点作品《窗上的霜花在六点十七分融化》冬日窗景影像">
+            <defs>
+              <linearGradient id="qcF1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#dfe9f3"/><stop offset="1" stop-color="#9fb6cc"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="#1a2330"/>
+            <rect x="70" y="46" width="500" height="268" rx="8" fill="url(#qcF1)"/>
+            <path d="M70 240 L230 160 L330 214 L470 130 L570 190 L570 314 L70 314 Z" fill="#c3d4e2"/>
+            <path d="M70 268 L210 206 L340 254 L480 190 L570 236 L570 314 L70 314 Z" fill="#e8f0f6"/>
+            <circle cx="470" cy="104" r="26" fill="#fff6d8"/>
+            <g stroke="#ffffff" stroke-width="2" opacity="0.75">
+              <path d="M150 66 L170 96 L140 118"/><path d="M420 70 L448 92 L424 122"/><path d="M300 60 L316 92 L292 112"/>
+            </g>
+            <rect x="70" y="46" width="500" height="268" rx="8" fill="none" stroke="#0f1620" stroke-width="8"/>
+            <rect x="70" y="46" width="500" height="268" rx="8" fill="none" stroke="#6d7d8f" stroke-width="2"/>
+            <text x="94" y="322" fill="#8fa3b8" font-size="13" font-family="sans-serif">06:17 · 窗上的霜花开始融化</text>
+          </svg>
+          <div class="qc-focus-body">
+            <h3 class="qc-h3">窗上的霜花在六点十七分融化</h3>
+            <p>作者用一支 50mm 定焦拍了七天同一个窗台，把霜花融化、暖气升起、猫跳上桌的三个瞬间剪进 90 秒。没有一句台词，评论区却有人说看哭了。</p>
+            <div class="qc-tags">
+              <span class="qc-tag">日常记录</span><span class="qc-tag">治愈影像</span><span class="qc-tag">第47期 · 编辑推荐</span>
+            </div>
+            <div class="qc-meta">
+              <span>作者 <b>@林間小满</b></span><span>播放 <b>28.6万</b></span><span>点赞 <b>1.9万</b></span><span>收藏 <b>8,204</b></span>
+            </div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> 点赞 <b>19,043</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+              <button class="qc-op" type="button" data-qc-modal="comment">评论</button>
+            </div>
+          </div>
+        </article>
+        <div class="qc-side-list">
+          <article class="qc-side-item">
+            <span class="qc-side-num">02</span>
+            <div>
+              <h4>菜市场六点半：第一批热气腾腾的人</h4>
+              <p>创作者把镜头架在摊位上，不拍食物，只拍摊主递出塑料袋时的手。生活感来自细节，而不是配乐。</p>
+              <div class="qc-meta"><span>@阿粿的周末</span><span>播放 16.2万</span><span>收藏 5,120</span><button class="qc-op" type="button" data-qc-like><i>♡</i> 点赞</button></div>
+            </div>
+          </article>
+          <article class="qc-side-item">
+            <span class="qc-side-num">03</span>
+            <div>
+              <h4>给奶奶装的第一个取暖器</h4>
+              <p>一支 3 分钟的情感短片，全程手持，画面偶尔晃。作者说：不想修得太稳，怕把真实的笨拙修掉。</p>
+              <div class="qc-meta"><span>@南岭_小七</span><span>播放 12.8万</span><span>收藏 4,630</span><button class="qc-op" type="button" data-qc-like><i>♡</i> 点赞</button></div>
+            </div>
+          </article>
+          <article class="qc-side-item">
+            <span class="qc-side-num">04</span>
+            <div>
+              <h4>清晨五点的值班室，有一盏不灭的灯</h4>
+              <p>医院夜班护工的 60 秒肖像。创作者在片尾放了三行字：拍摄得到许可，感谢每一位值班的人。</p>
+              <div class="qc-meta"><span>@半格胶片</span><span>播放 9.7万</span><span>收藏 3,908</span><button class="qc-op" type="button" data-qc-like><i>♡</i> 点赞</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频流（三列卡片，标签筛选 + 交互） -->
+  <section class="qc-sec qc-videos qc-anchor" id="qc-videos">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">Daily Videos</span>
+          <h2 class="qc-h2">今日视频 · 正在被<em>一起草</em>的作品</h2>
+        </div>
+        <p class="qc-lead">按题材筛选，看看来自不同城市的创作者如何完成同一个命题。所有作品均为官方发布渠道收录的原创高清内容。</p>
+      </div>
+      <div class="qc-filter-row" id="qcFilterRow">
+        <button class="qc-filter qc-active" type="button" data-qc-filter="all">全部</button>
+        <button class="qc-filter" type="button" data-qc-filter="生活">日常记录</button>
+        <button class="qc-filter" type="button" data-qc-filter="城市">城市探索</button>
+        <button class="qc-filter" type="button" data-qc-filter="幕后">创作幕后</button>
+        <button class="qc-filter" type="button" data-qc-filter="手作">手作DIY</button>
+      </div>
+      <div class="qc-video-grid" id="qcVideoGrid">
+
+        <article class="qc-video-card" data-qc-cat="生活">
+          <div class="qc-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：出租屋阳台上的绿植与晾衣绳，冬日午后阳光">
+              <rect width="480" height="270" fill="#f0e6d8"/>
+              <rect y="196" width="480" height="74" fill="#d9c7b1"/>
+              <rect x="44" y="60" width="120" height="140" rx="6" fill="#b9cdd6"/>
+              <rect x="44" y="60" width="120" height="140" rx="6" fill="none" stroke="#8a9aa5" stroke-width="4"/>
+              <path d="M44 60 L164 200 M164 60 L44 200" stroke="#8a9aa5" stroke-width="4"/>
+              <rect x="210" y="40" width="6" height="160" fill="#a58c70"/>
+              <path d="M120 96 Q216 76 320 100" stroke="#8c7a63" stroke-width="3" fill="none"/>
+              <rect x="250" y="96" width="44" height="60" rx="4" fill="#e2b3a2"/>
+              <rect x="322" y="104" width="40" height="54" rx="4" fill="#c8d9c0"/>
+              <circle cx="386" cy="150" r="34" fill="#8fae7d"/>
+              <rect x="372" y="172" width="28" height="34" fill="#b98f6a"/>
+              <circle cx="386" cy="150" r="34" fill="#8fae7d" opacity="0.65"/>
+              <circle cx="404" cy="120" r="18" fill="#a8c492"/>
+            </svg>
+            <span class="qc-video-dur">04:12</span>
+            <span class="qc-video-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="qc-video-body">
+            <h3>在 12 平米出租屋，我给自己搭了一个春天</h3>
+            <p>搬家第 9 天，用 300 元预算改造阳台。镜头记录下打孔、翻土、失败两次的挂绳，以及第一株薄荷活过来的那天。</p>
+            <div class="qc-tags"><span class="qc-tag">日常记录</span><span class="qc-tag">家居收纳</span><span class="qc-tag">第47期</span></div>
+            <div class="qc-meta"><span>@林間小满</span><span>播放 21.4万</span><span>点赞 1.2万</span></div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> <b>12,940</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-video-card" data-qc-cat="城市">
+          <div class="qc-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：雨夜城市街道，路灯与倒影形成橙色光带">
+              <rect width="480" height="270" fill="#141c28"/>
+              <rect x="30" y="70" width="80" height="140" fill="#1d2836"/>
+              <rect x="126" y="40" width="96" height="170" fill="#22303f"/>
+              <rect x="238" y="88" width="70" height="122" fill="#1a2432"/>
+              <rect x="324" y="24" width="112" height="186" fill="#263545"/>
+              <g fill="#ffb45a" opacity="0.9">
+                <rect x="44" y="88" width="12" height="12"/><rect x="70" y="88" width="12" height="12"/><rect x="44" y="118" width="12" height="12"/>
+                <rect x="142" y="62" width="14" height="14"/><rect x="172" y="62" width="14" height="14"/><rect x="142" y="98" width="14" height="14"/>
+                <rect x="340" y="48" width="16" height="16"/><rect x="376" y="48" width="16" height="16"/><rect x="340" y="88" width="16" height="16"/><rect x="400" y="88" width="16" height="16"/>
+                <rect x="252" y="108" width="12" height="12"/>
+              </g>
+              <rect y="210" width="480" height="60" fill="#0d131c"/>
+              <path d="M120 270 L150 210 L180 270 Z" fill="#ffb45a" opacity="0.22"/>
+              <path d="M280 270 L310 210 L340 270 Z" fill="#ffb45a" opacity="0.18"/>
+              <circle cx="230" cy="210" r="7" fill="#ffe3ae"/>
+              <path d="M230 210 L230 270" stroke="#ffe3ae" stroke-width="2" opacity="0.4"/>
+            </svg>
+            <span class="qc-video-dur">07:36</span>
+            <span class="qc-video-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="qc-video-body">
+            <h3>雨夜十点半，我跟着末班公交走了三站</h3>
+            <p>不采访、不解说，只用环境声。站台的提示音、关门的液压声、司机的一句「慢走」，构成一条城市的夜晚切片。</p>
+            <div class="qc-tags"><span class="qc-tag">城市探索</span><span class="qc-tag">治愈影像</span><span class="qc-tag">声音设计</span></div>
+            <div class="qc-meta"><span>@半格胶片</span><span>播放 18.9万</span><span>点赞 9,860</span></div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> <b>9,863</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-video-card" data-qc-cat="幕后">
+          <div class="qc-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：剪辑台时间线与三块监视器，创作幕后工作场景">
+              <rect width="480" height="270" fill="#1b222c"/>
+              <rect x="24" y="22" width="200" height="118" rx="6" fill="#2b3542" stroke="#44505f"/>
+              <path d="M80 132 L118 62 L156 132 Z" fill="#d8ff35" opacity="0.85"/>
+              <rect x="256" y="22" width="200" height="118" rx="6" fill="#2b3542" stroke="#44505f"/>
+              <rect x="288" y="52" width="136" height="10" rx="5" fill="#ff5a3c"/>
+              <rect x="288" y="76" width="98" height="10" rx="5" fill="#5b6674"/>
+              <rect x="288" y="100" width="120" height="10" rx="5" fill="#5b6674"/>
+              <rect x="24" y="164" width="432" height="82" rx="6" fill="#111823" stroke="#3a4553"/>
+              <g>
+                <rect x="38" y="178" width="120" height="18" rx="3" fill="#d8ff35" opacity="0.85"/>
+                <rect x="166" y="178" width="80" height="18" rx="3" fill="#ff5a3c" opacity="0.85"/>
+                <rect x="254" y="178" width="150" height="18" rx="3" fill="#4d9ad8"/>
+                <rect x="38" y="206" width="60" height="14" rx="3" fill="#5b6674"/>
+                <rect x="106" y="206" width="90" height="14" rx="3" fill="#5b6674"/>
+                <rect x="204" y="206" width="44" height="14" rx="3" fill="#5b6674"/>
+              </g>
+              <path d="M28 232 L452 232" stroke="#3a4553" stroke-width="2"/>
+              <path d="M300 26 L300 158" stroke="#ff5a3c" stroke-width="2" opacity="0.9"/>
+            </svg>
+            <span class="qc-video-dur">11:02</span>
+            <span class="qc-video-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="qc-video-body">
+            <h3>我把 60 秒短片剪了 27 版，前 26 版错在哪</h3>
+            <p>一次完整的创作复盘：从剧本过密、镜头冗余到配乐抢戏，逐版对比时间线，最后给出可直接套用的结构清单。</p>
+            <div class="qc-tags"><span class="qc-tag">创作幕后</span><span class="qc-tag">教程干货</span><span class="qc-tag">剪辑思路</span></div>
+            <div class="qc-meta"><span>@剪辑台老周</span><span>播放 15.3万</span><span>点赞 1.4万</span></div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> <b>14,220</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-video-card" data-qc-cat="手作">
+          <div class="qc-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：木工台上未完成的木勺与手工具，暖色木屑">
+              <rect width="480" height="270" fill="#e8d9bf"/>
+              <rect y="150" width="480" height="120" fill="#c9ab80"/>
+              <path d="M270 40 C240 40 216 66 216 96 C216 128 242 150 274 150 C310 150 330 124 326 96 C322 62 300 40 270 40 Z" fill="#a8763f"/>
+              <path d="M270 60 C250 60 236 76 236 96 C236 116 252 130 272 130 C292 130 306 114 306 96 C306 76 290 60 270 60 Z" fill="#d2a970"/>
+              <rect x="140" y="140" width="14" height="86" rx="6" fill="#7a5230" transform="rotate(-14 147 183)"/>
+              <rect x="330" y="128" width="90" height="16" rx="7" fill="#8c97a3"/>
+              <rect x="410" y="118" width="24" height="36" rx="5" fill="#5c6672"/>
+              <g fill="#b58d55" opacity="0.7">
+                <circle cx="80" cy="214" r="4"/><circle cx="106" cy="230" r="3"/><circle cx="380" cy="220" r="4"/><circle cx="418" cy="202" r="3"/><circle cx="252" cy="236" r="3"/>
+              </g>
+              <rect x="40" y="180" width="84" height="12" rx="4" fill="#8c6a44"/>
+              <rect x="40" y="200" width="60" height="10" rx="4" fill="#8c6a44" opacity="0.8"/>
+            </svg>
+            <span class="qc-video-dur">06:48</span>
+            <span class="qc-video-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="qc-video-body">
+            <h3>用一块旧地板，做一把每天都会用的木勺</h3>
+            <p>从拆旧地板到打磨上油，一共 6 天、两次开裂返工。作者把失败镜头也留在片子里，说这才是手作的真实部分。</p>
+            <div class="qc-tags"><span class="qc-tag">手作DIY</span><span class="qc-tag">生活方式</span><span class="qc-tag">第47期</span></div>
+            <div class="qc-meta"><span>@木作小院</span><span>播放 11.6万</span><span>点赞 8,120</span></div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> <b>8,126</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-video-card" data-qc-cat="生活">
+          <div class="qc-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：厨房台面上的早餐与晨光，一只猫在窗边">
+              <rect width="480" height="270" fill="#f6ede0"/>
+              <rect y="176" width="480" height="94" fill="#dcc7a9"/>
+              <path d="M0 0 L200 0 L120 176 L0 176 Z" fill="#fff3c4" opacity="0.85"/>
+              <ellipse cx="180" cy="182" rx="86" ry="20" fill="#c9ae8a"/>
+              <circle cx="180" cy="158" r="40" fill="#fdfaf4"/>
+              <circle cx="180" cy="158" r="26" fill="#f2c14e"/>
+              <rect x="270" y="130" width="52" height="66" rx="8" fill="#b9cdd6"/>
+              <rect x="278" y="112" width="36" height="22" rx="6" fill="#9fb6c4"/>
+              <ellipse cx="386" cy="168" rx="46" ry="24" fill="#a68e76"/>
+              <circle cx="420" cy="146" r="22" fill="#a68e76"/>
+              <path d="M406 130 L412 112 L424 128 Z" fill="#a68e76"/>
+              <path d="M432 130 L442 114 L446 132 Z" fill="#a68e76"/>
+              <circle cx="428" cy="146" r="3" fill="#2a3038"/>
+              <path d="M340 168 Q380 140 386 168" stroke="#8a705a" stroke-width="8" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span class="qc-video-dur">03:24</span>
+            <span class="qc-video-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="qc-video-body">
+            <h3>一个人吃早餐的第 400 天</h3>
+            <p>没有精致的摆盘，只有每天 7:05 的同一张桌子。作者用固定机位记录季节变化，直到有天猫跳上了桌。</p>
+            <div class="qc-tags"><span class="qc-tag">日常记录</span><span class="qc-tag">萌宠日常</span><span class="qc-tag">治愈影像</span></div>
+            <div class="qc-meta"><span>@阿粿的周末</span><span>播放 13.2万</span><span>点赞 9,340</span></div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> <b>9,346</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-video-card" data-qc-cat="城市">
+          <div class="qc-video-thumb">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：清晨江边慢跑道上的跑者剪影与城市天际线">
+              <defs>
+                <linearGradient id="qcF6" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#8fb8d6"/><stop offset="1" stop-color="#e6eef4"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#qcF6)"/>
+              <circle cx="380" cy="70" r="34" fill="#fff4d6"/>
+              <g fill="#5d7286" opacity="0.55">
+                <rect x="20" y="120" width="40" height="70"/><rect x="70" y="96" width="46" height="94"/><rect x="126" y="132" width="34" height="58"/>
+                <rect x="290" y="110" width="44" height="80"/><rect x="344" y="88" width="52" height="102"/><rect x="406" y="124" width="40" height="66"/>
+              </g>
+              <rect y="190" width="480" height="80" fill="#b7c8d4"/>
+              <path d="M0 210 Q240 188 480 210" stroke="#8fa4b3" stroke-width="4" fill="none"/>
+              <path d="M0 232 Q240 214 480 232" stroke="#a2b6c4" stroke-width="3" fill="none"/>
+              <circle cx="196" cy="170" r="11" fill="#2b3a4a"/>
+              <path d="M196 182 L188 214 L210 214 L202 182 Z" fill="#2b3a4a"/>
+              <path d="M196 190 L176 202 M196 190 L216 200" stroke="#2b3a4a" stroke-width="6" stroke-linecap="round"/>
+              <path d="M190 214 L178 238 M206 214 L218 238" stroke="#2b3a4a" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="qc-video-dur">05:18</span>
+            <span class="qc-video-play" aria-hidden="true">▶</span>
+          </div>
+          <div class="qc-video-body">
+            <h3>跑完这条江岸线，我拍下了 7 个人的清晨</h3>
+            <p>城市探索与健康运动的交叉记录。用配速作为剪辑节奏，把陌生的跑者、遛狗的人和早班环卫工串成一条线。</p>
+            <div class="qc-tags"><span class="qc-tag">城市探索</span><span class="qc-tag">健康运动</span><span class="qc-tag">在地文化</span></div>
+            <div class="qc-meta"><span>@南岭_小七</span><span>播放 10.4万</span><span>点赞 7,860</span></div>
+            <div class="qc-ops">
+              <button class="qc-op" type="button" data-qc-like><i>♡</i> <b>7,865</b></button>
+              <button class="qc-op" type="button" data-qc-save><i>◇</i> 收藏</button>
+              <button class="qc-op" type="button" data-qc-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="qc-sec qc-topics qc-anchor" id="qc-topics">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">Programs</span>
+          <h2 class="qc-h2">专题企划 · 让<em>每日大赛</em>延展成长期栏目</h2>
+        </div>
+        <p class="qc-lead">我们把重复出现的优秀命题沉淀为专题，让创作者有更清晰的创作路径，也让企业合作有更稳定的内容载体。</p>
+      </div>
+      <div class="qc-topic-grid">
+        <article class="qc-topic">
+          <div class="qc-topic-head">
+            <h3>冬日第一帧</h3>
+            <span class="qc-topic-status">更新中</span>
+          </div>
+          <p>第 47 期正在进行的命题专题。以「冷」为起点，但拒绝煽情，要求作品里必须出现一处温度变化的细节。</p>
+          <ul class="qc-topic-list">
+            <li><b>01</b>窗上的霜花在六点十七分融化</li>
+            <li><b>02</b>菜市场六点半：第一批热气腾腾的人</li>
+            <li><b>03</b>给奶奶装的第一个取暖器</li>
+          </ul>
+        </article>
+        <article class="qc-topic">
+          <div class="qc-topic-head">
+            <h3>一个人的工作间</h3>
+            <span class="qc-topic-status qc-soon">第 48 期预告</span>
+          </div>
+          <p>面对独处与工作。不限行业，可以是木工台、剪辑桌、直播间，要求展示工具与手的关系，鼓励无解说版本。</p>
+          <ul class="qc-topic-list">
+            <li><b>01</b>用一块旧地板，做一把每天都会用的木勺</li>
+            <li><b>02</b>我把 60 秒短片剪了 27 版，前 26 版错在哪</li>
+            <li><b>03</b>凌晨两点的直播间，只有 3 个观众</li>
+          </ul>
+        </article>
+        <article class="qc-topic">
+          <div class="qc-topic-head">
+            <h3>社区共创计划</h3>
+            <span class="qc-topic-status">长期开放</span>
+          </div>
+          <p>面向企业品牌的命题共创：开放赛题、联合评审、官方展映。已服务品牌覆盖家居、户外与本地生活三个品类。</p>
+          <ul class="qc-topic-list">
+            <li><b>01</b>品牌命题：把一件日用品拍出使用痕迹</li>
+            <li><b>02</b>创作者联动：3 城 6 位创作者的城市对照实验</li>
+            <li><b>03</b>公益单元：乡村教室里的第一堂影像课</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵（双列简介） -->
+  <section class="qc-sec qc-authors qc-anchor" id="qc-authors">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">Creators</span>
+          <h2 class="qc-h2">创作者矩阵 · 每天和<em>一起草</em>一起更新的人</h2>
+        </div>
+        <p class="qc-lead">他们来自不同城市、不同职业，共同点是把拍摄当成日常习惯。点击头像下方的按钮可以查看完整档案。</p>
+      </div>
+      <div class="qc-author-grid">
+
+        <article class="qc-author">
+          <div class="qc-avatar" style="background:#3f6b8f">林</div>
+          <div class="qc-author-main">
+            <b>林間小满</b>
+            <span class="qc-field">日常记录 · 家居影像</span>
+            <p>定居二线城市的设计师，拍出租屋改造与城市阳台系列。擅长用固定机位记录时间，认为「耐心比设备重要」。连续参加 31 期每日大赛，作品以真实、克制著称。</p>
+            <div class="qc-author-stats"><span>作品 <b>63</b></span><span>粉丝 <b>4.8万</b></span><span>入选精品 <b>9</b></span></div>
+            <div class="qc-author-ops">
+              <button class="qc-op" type="button" data-qc-author="林間小满">查看档案</button>
+              <button class="qc-op" type="button" data-qc-share>分享主页</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-author">
+          <div class="qc-avatar" style="background:#c0563c">周</div>
+          <div class="qc-author-main">
+            <b>剪辑台老周</b>
+            <span class="qc-field">教程干货 · 创作幕后</span>
+            <p>五年商业剪辑经验，转型做创作复盘类内容。习惯把失败版本公开，主张「剪辑是删减的艺术」。每周更新一期结构拆解，是社区里被收藏最多的教程作者之一。</p>
+            <div class="qc-author-stats"><span>作品 <b>48</b></span><span>粉丝 <b>6.2万</b></span><span>入选精品 <b>12</b></span></div>
+            <div class="qc-author-ops">
+              <button class="qc-op" type="button" data-qc-author="剪辑台老周">查看档案</button>
+              <button class="qc-op" type="button" data-qc-share>分享主页</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-author">
+          <div class="qc-avatar" style="background:#4a7a58">木</div>
+          <div class="qc-author-main">
+            <b>木作小院</b>
+            <span class="qc-field">手作DIY · 生活方式</span>
+            <p>在城郊租了个带院子的老屋，做木作也拍木作。视频里保留锯错、开裂和返工的段落，认为手作的魅力在于不可复制。作品多采用自然声与长镜头。</p>
+            <div class="qc-author-stats"><span>作品 <b>36</b></span><span>粉丝 <b>3.1万</b></span><span>入选精品 <b>7</b></span></div>
+            <div class="qc-author-ops">
+              <button class="qc-op" type="button" data-qc-author="木作小院">查看档案</button>
+              <button class="qc-op" type="button" data-qc-share>分享主页</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="qc-author">
+          <div class="qc-avatar" style="background:#5b5570">半</div>
+          <div class="qc-author-main">
+            <b>半格胶片</b>
+            <span class="qc-field">城市探索 · 声音设计</span>
+            <p>纪录片摄影出身，偏爱雨夜、末班车和值班室这类城市缝隙。坚持先录声音再想画面，作品多为无解说环境声短片。曾获第 42 期评审团特别推荐。</p>
+            <div class="qc-author-stats"><span>作品 <b>54</b></span><span>粉丝 <b>5.6万</b></span><span>入选精品 <b>11</b></span></div>
+            <div class="qc-author-ops">
+              <button class="qc-op" type="button" data-qc-author="半格胶片">查看档案</button>
+              <button class="qc-op" type="button" data-qc-share>分享主页</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 榜单 + 评价（评分摘要 + 引用） -->
+  <section class="qc-sec qc-rank qc-anchor" id="qc-rank">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">Rank &amp; Reviews</span>
+          <h2 class="qc-h2">榜单与口碑 · 数据之外的真实<em>反馈</em></h2>
+        </div>
+        <p class="qc-lead">热度来自播放与互动，口碑来自具体的观看体验。这两件事我们分开统计，也一起公示。</p>
+      </div>
+      <div class="qc-rank-grid">
+        <div class="qc-rank-panel">
+          <h3>第 47 期热度榜</h3>
+          <div class="qc-rank-row">
+            <span class="qc-rank-no">1</span>
+            <div class="qc-rank-info"><b>窗上的霜花在六点十七分融化</b><span>@林間小满 · 日常记录</span></div>
+            <span class="qc-rank-val">28.6万播放</span>
+          </div>
+          <div class="qc-rank-row">
+            <span class="qc-rank-no">2</span>
+            <div class="qc-rank-info"><b>在 12 平米出租屋，我给自己搭了一个春天</b><span>@林間小满 · 家居收纳</span></div>
+            <span class="qc-rank-val">21.4万播放</span>
+          </div>
+          <div class="qc-rank-row">
+            <span class="qc-rank-no">3</span>
+            <div class="qc-rank-info"><b>雨夜十点半，我跟着末班公交走了三站</b><span>@半格胶片 · 城市探索</span></div>
+            <span class="qc-rank-val">18.9万播放</span>
+          </div>
+          <div class="qc-rank-row">
+            <span class="qc-rank-no">4</span>
+            <div class="qc-rank-info"><b>菜市场六点半：第一批热气腾腾的人</b><span>@阿粿的周末 · 日常记录</span></div>
+            <span class="qc-rank-val">16.2万播放</span>
+          </div>
+          <div class="qc-rank-row">
+            <span class="qc-rank-no">5</span>
+            <div class="qc-rank-info"><b>我把 60 秒短片剪了 27 版，前 26 版错在哪</b><span>@剪辑台老周 · 教程干货</span></div>
+            <span class="qc-rank-val">15.3万播放</span>
+          </div>
+          <div class="qc-rank-row">
+            <span class="qc-rank-no">6</span>
+            <div class="qc-rank-info"><b>一个人吃早餐的第 400 天</b><span>@阿粿的周末 · 萌宠日常</span></div>
+            <span class="qc-rank-val">13.2万播放</span>
+          </div>
+        </div>
+
+        <div class="qc-score-panel">
+          <h3 style="font-size:16px;margin-bottom:14px;color:var(--qc-ink)">社区口碑摘要</h3>
+          <div class="qc-score-summary">
+            <div class="qc-score-big">4.8<small>/5</small></div>
+            <div class="qc-score-bars">
+              <div class="qc-bar"><span>内容</span><div class="qc-bar-track"><div class="qc-bar-fill" style="width:96%"></div></div><span>4.8</span></div>
+              <div class="qc-bar"><span>赛题</span><div class="qc-bar-track"><div class="qc-bar-fill" style="width:92%"></div></div><span>4.6</span></div>
+              <div class="qc-bar"><span>反馈</span><div class="qc-bar-track"><div class="qc-bar-fill" style="width:88%"></div></div><span>4.4</span></div>
+              <div class="qc-bar"><span>社区</span><div class="qc-bar-track"><div class="qc-bar-fill" style="width:94%"></div></div><span>4.7</span></div>
+            </div>
+          </div>
+          <blockquote class="qc-quote">
+            「第一次投稿就被编辑写了两百字反馈，指出了我镜头衔接的问题，比拿奖更有用。」
+            <span>—— 创作者 @樟木巷口 · 第 44 期参与者</span>
+          </blockquote>
+          <div class="qc-review-list">
+            <div class="qc-review">
+              <div class="qc-review-top"><b>@小满的邻居</b><em>★★★★★</em><span>2026-11-18</span></div>
+              <p>每天中午等赛题已经变成习惯。题目不难，但总能逼我想点新东西，这个节奏对上班族很友好。</p>
+            </div>
+            <div class="qc-review">
+              <div class="qc-review-top"><b>@三线城市影迷</b><em>★★★★☆</em><span>2026-11-16</span></div>
+              <p>作品质量比预期高，尤其城市探索类。缺点是热门榜单更新稍慢，希望评审结果能再快一点公布。</p>
+            </div>
+            <div class="qc-review">
+              <div class="qc-review-top"><b>@半夜剪片的人</b><em>★★★★★</em><span>2026-11-14</span></div>
+              <p>创作门诊直播真的有用。老周拆脚本那段我反复看了三遍，第二天就把自己的片子重剪了。</p>
+            </div>
+            <div class="qc-review">
+              <div class="qc-review-top"><b>@县城教师李</b><em>★★★★☆</em><span>2026-11-11</span></div>
+              <p>把这里当教学素材库用，学生看手作和城市类的片子特别专注。希望多出一些适合课堂的无解说版本。</p>
+            </div>
+            <div class="qc-review">
+              <div class="qc-review-top"><b>@品牌内容负责人</b><em>★★★★★</em><span>2026-11-08</span></div>
+              <p>合作过一次命题共创，从赛题设计到展映页面都很专业，创作者视角比传统广告更打动人。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：企业动态 + 合作品牌 + FAQ -->
+  <section class="qc-sec qc-aux qc-anchor" id="qc-dynamics">
+    <div class="qc-wrap">
+      <div class="qc-sec-head">
+        <div>
+          <span class="qc-eyebrow">News &amp; Support</span>
+          <h2 class="qc-h2">企业动态与<em>社区支持</em></h2>
+        </div>
+        <p class="qc-lead">官方发布、合作进展与常见问题都在这里。我们保持每月至少三条公开动态，接受社区监督。</p>
+      </div>
+      <div class="qc-aux-grid">
+        <div>
+          <h3 class="qc-h3" style="margin-bottom:14px">企业动态</h3>
+          <div class="qc-news-item">
+            <div class="qc-news-date"><b>11·20</b><span>2026</span></div>
+            <div>
+              <h4>第 47 期命题正式开放，新增手机竖屏投稿通道</h4>
+              <p>为方便通勤创作者，官方网站投稿入口支持竖屏 9:16 直传，并新增自动字幕识别与码率建议。</p>
+            </div>
+          </div>
+          <div class="qc-news-item">
+            <div class="qc-news-date"><b>11·12</b><span>2026</span></div>
+            <div>
+              <h4>与三个户外与家居品牌达成年度内容合作</h4>
+              <p>合作将围绕「使用痕迹」系列命题展开，优秀作品进入官方网站精品内容展映区并获得创作基金。</p>
+            </div>
+          </div>
+          <div class="qc-news-item">
+            <div class="qc-news-date"><b>10·30</b><span>2026</span></div>
+            <div>
+              <h4>创作者成长白皮书（2026 版）发布</h4>
+              <p>汇总 3,240 位创作者的投稿频次、题材偏好与反馈诉求，首次公开评审维度的权重说明。</p>
+            </div>
+          </div>
+          <div class="qc-news-item">
+            <div class="qc-news-date"><b>10·15</b><span>2026</span></div>
+            <div>
+              <h4>公益单元「乡村第一堂影像课」完成第 6 站</h4>
+              <p>团队与志愿创作者前往两所乡村中学，开放设备与课程，并把学生作品纳入社区特别展映。</p>
+            </div>
+          </div>
+          <h3 class="qc-h3" style="margin:26px 0 10px">合作品牌与伙伴</h3>
+          <div class="qc-partner-grid">
+            <div class="qc-partner">山野纪<small>户外影像合作</small></div>
+            <div class="qc-partner">木与小满<small>家居内容共创</small></div>
+            <div class="qc-partner">城南书店<small>线下放映空间</small></div>
+            <div class="qc-partner">光年器材<small>设备支持伙伴</small></div>
+          </div>
+        </div>
+
+        <div class="qc-faq" id="qc-faq">
+          <h3 class="qc-h3" style="margin-bottom:10px">常见问题</h3>
+          <details open>
+            <summary>第一次参加每日大赛，需要准备什么？</summary>
+            <p>只需要一部能拍视频的手机和一段 30 秒以上的素材。进入投稿入口后填写标题、题材标签与原创声明即可，单个文件建议不超过 800MB。评审关注表达是否完整，不要求专业设备。</p>
+          </details>
+          <details>
+            <summary>作品的版权归谁？官方会二次使用吗？</summary>
+            <p>版权归创作者所有。投稿时你授权官方在展映区、专题页与合作宣传中非商业展示作品；如涉及品牌商业合作，我们会在使用前单独联系并签署授权，创作者可选择拒绝。</p>
+          </details>
+          <details>
+            <summary>为什么我的作品没有进入精品内容？</summary>
+            <p>每期精品内容名额有限，未入选不等于作品不好。你可以在创作门诊直播中申请公开点评，编辑会针对结构、声音与节奏给出具体建议，并保留后续推荐机会。</p>
+          </details>
+          <details>
+            <summary>评审公平性如何保证？</summary>
+            <p>评审由大众投票与专业评审共同组成，权重分别为 40% 与 60%。每期公布评审名单、评分维度与投票数据摘要，并对异常刷票行为进行清理与公示。</p>
+          </details>
+          <details>
+            <summary>企业可以参与命题共创吗？</summary>
+            <p>可以。我们提供命题设计、创作者联动与展映页面三种合作方式，合作内容会明确标注品牌身份，避免影响社区作品的独立性。合作咨询可通过页面底部的联系入口提交。</p>
+          </details>
+          <details>
+            <summary>移动端看视频会消耗很多流量吗？</summary>
+            <p>官方网站默认加载标清预览，点击播放后按网络状况自动切换清晰度，并支持手动选择高清与超清。我们在压缩工具中也会给出适合移动观看的码率建议。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="qc-cta">
+    <div class="qc-wrap qc-cta-in">
+      <div>
+        <h2>明天的赛题已经在路上</h2>
+        <p>加入 17.cn一起草每日大赛，用一段影像记录今天。官方网站投稿通道长期开放，欢迎每一位认真生活的人。</p>
+      </div>
+      <div class="qc-cta-actions">
+        <button class="qc-btn qc-btn-fluo" type="button" data-qc-modal="submit">立即投稿报名</button>
+        <button class="qc-btn qc-btn-line" type="button" data-qc-modal="contact">联系我们</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="qc-footer">
+  <div class="qc-wrap">
+    <div class="qc-footer-grid">
+      <div class="qc-footer-brand">
+        <div class="qc-footer-logo">
+          <span class="qc-logo-mark">17</span>
+          <div class="qc-logo-text" style="color:#fff">
+            <b style="color:#fff">17.cn 一起草每日大赛</b>
+            <span style="color:#7f8a99">DAILY CREATE ARENA</span>
+          </div>
+        </div>
+        <p>聚焦每日创作挑战的视频品牌与内容社区。坚持原创、正版、高清的内容标准，为创作者与企业搭建高品质内容生态。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#qc-focus">今日焦点</a></li>
+          <li><a href="#qc-videos">视频作品</a></li>
+          <li><a href="#qc-topics">专题企划</a></li>
+          <li><a href="#qc-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#qc-rank">榜单与口碑</a></li>
+          <li><a href="#qc-dynamics">企业动态</a></li>
+          <li><a href="#qc-faq">常见问题</a></li>
+          <li><a href="#" data-qc-modal="submit">投稿入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li><a href="#" data-qc-modal="contact">商务与共创</a></li>
+          <li><a href="#" data-qc-modal="comment">反馈与建议</a></li>
+          <li><a href="#qc-about">品牌故事</a></li>
+          <li><a href="#" data-qc-modal="join">加入社区</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="qc-footer-bottom">
+      <span>17.cn一起草每日大赛 官方网站 | 版权所有 | 持续运营中</span>
+      <span>备案号：示例备 2026000000 号 · 内容均为原创正版，高清展映</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹窗 -->
+<div class="qc-modal-mask" id="qcModalMask" role="dialog" aria-modal="true" aria-label="交互弹窗">
+  <div class="qc-modal" id="qcModalBox">
+    <button class="qc-modal-close" type="button" id="qcModalClose" aria-label="关闭弹窗">×</button>
+    <div id="qcModalContent"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="qc-toast" id="qcToast" role="status" aria-live="polite"></div>
+
+<!-- 回到顶部 -->
+<button class="qc-totop" id="qcToTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ===== 公告条轮播 ===== */
+  var noticeItems = document.querySelectorAll('.qc-notice-item');
+  var noticeIdx = 0;
+  if(noticeItems.length > 1){
+    setInterval(function(){
+      noticeItems[noticeIdx].classList.remove('qc-on');
+      noticeIdx = (noticeIdx + 1) % noticeItems.length;
+      noticeItems[noticeIdx].classList.add('qc-on');
+    }, 5200);
+  }
+
+  /* ===== Toast ===== */
+  var toastEl = document.getElementById('qcToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('qc-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('qc-on'); }, 2200);
+  }
+
+  /* ===== 移动端导航 ===== */
+  var burger = document.getElementById('qcBurger');
+  var mobileNav = document.getElementById('qcMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('qc-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('qc-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ===== 搜索提示 ===== */
+  var searchInput = document.getElementById('qcSearchInput');
+  var searchHint = document.getElementById('qcSearchHint');
+  var searchPool = [
+    '窗上的霜花在六点十七分融化',
+    '在 12 平米出租屋，我给自己搭了一个春天',
+    '雨夜十点半，我跟着末班公交走了三站',
+    '用一块旧地板，做一把每天都会用的木勺',
+    '我把 60 秒短片剪了 27 版，前 26 版错在哪',
+    '一个人吃早餐的第 400 天',
+    '创作者：林間小满',
+    '创作者：剪辑台老周',
+    '专题：冬日第一帧',
+    '专题：一个人的工作间'
+  ];
+  function renderHint(kw){
+    var val = (kw || '').trim();
+    if(!val){ searchHint.classList.remove('qc-on'); searchHint.innerHTML=''; return; }
+    var hits = searchPool.filter(function(s){ return s.indexOf(val) > -1; }).slice(0,6);
+    if(!hits.length){
+      searchHint.innerHTML = '<div>暂无匹配结果，试试“霜花”“出租屋”“木勺”</div>';
+    }else{
+      searchHint.innerHTML = hits.map(function(s){
+        return '<div class="qc-hit">' + s + '</div>';
+      }).join('');
+    }
+    searchHint.classList.add('qc-on');
+  }
+  searchInput.addEventListener('input', function(){ renderHint(this.value); });
+  searchInput.addEventListener('focus', function(){ if(this.value) renderHint(this.value); });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+      e.preventDefault();
+      var v = this.value.trim();
+      if(v){
+        toast('已为你筛选「' + v + '」相关内容');
+        var target = document.getElementById('qc-videos');
+        if(target) target.scrollIntoView({behavior:'smooth'});
+      }else{
+        toast('请输入关键词后再搜索');
+      }
+      searchHint.classList.remove('qc-on');
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.qc-search')){ searchHint.classList.remove('qc-on'); }
+  });
+
+  /* ===== 点赞 / 收藏 ===== */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-qc-like]');
+    if(likeBtn){
+      var b = likeBtn.querySelector('b');
+      var num = b ? parseInt(b.textContent.replace(/[^\d]/g,''),10) || 0 : 0;
+      var on = likeBtn.classList.toggle('qc-liked');
+      var icon = likeBtn.querySelector('i');
+      if(icon) icon.textContent = on ? '♥' : '♡';
+      if(b) b.textContent = (on ? num + 1 : Math.max(0, num - 1)).toLocaleString('en-US');
+      toast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+      return;
+    }
+    var saveBtn = e.target.closest('[data-qc-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('qc-saved');
+      var si = saveBtn.querySelector('i');
+      if(si) si.textContent = saved ? '◆' : '◇';
+      toast(saved ? '已收藏，可在个人中心查看' : '已取消收藏');
+      return;
+    }
+    var shareBtn = e.target.closest('[data-qc-share]');
+    if(shareBtn){
+      var url = 'https://17.cn/daily-create';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          toast('作品链接已复制，可分享到微信 / 微博');
+        }).catch(function(){
+          toast('复制失败，请手动复制链接');
+        });
+      }else{
+        toast('长按页面即可复制链接分享');
+      }
+      return;
+    }
+  });
+
+  /* ===== 标签筛选 ===== */
+  var filterRow = document.getElementById('qcFilterRow');
+  var videoCards = Array.prototype.slice.call(document.querySelectorAll('#qcVideoGrid .qc-video-card'));
+  filterRow.addEventListener('click', function(e){
+    var btn = e.target.closest('[data-qc-filter]');
+    if(!btn) return;
+    var f = btn.getAttribute('data-qc-filter');
+    filterRow.querySelectorAll('.qc-filter').forEach(function(b){ b.classList.remove('qc-active'); });
+    btn.classList.add('qc-active');
+    var shown = 0;
+    videoCards.forEach(function(card){
+      var cat = card.getAttribute('data-qc-cat');
+      var ok = (f === 'all') || (cat === f);
+      card.style.display = ok ? '' : 'none';
+      if(ok) shown++;
+    });
+    if(shown === 0){
+      toast('该题材暂无在展作品，换个标签看看');
+    }else{
+      toast('已筛选「' + btn.textContent.trim() + '」共 ' + shown + ' 件作品');
+    }
+  });
+
+  /* ===== 弹窗系统 ===== */
+  var modalMask = document.getElementById('qcModalMask');
+  var modalBox = document.getElementById('qcModalBox');
+  var modalContent = document.getElementById('qcModalContent');
+  var modalClose = document.getElementById('qcModalClose');
+
+  function openModal(html){
+    modalContent.innerHTML = html;
+    modalMask.classList.add('qc-on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modalMask.classList.remove('qc-on');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  modalMask.addEventListener('click', function(e){
+    if(e.target === modalMask) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modalMask.classList.contains('qc-on')) closeModal();
+  });
+
+  function modalSubmit(){
+    openModal(
+      '<h3>投稿报名 · 第 47 期</h3>' +
+      '<p>本期命题「冬日的第一帧」，截稿时间 11月25日 20:00。填写基本信息后，官方工作人员会在 1 个工作日内通过站内信联系你。</p>' +
+      '<label for="qcF1">作品标题</label>' +
+      '<input id="qcF1" type="text" placeholder="例如：窗上的霜花在六点十七分融化">' +
+      '<label for="qcF2">题材标签</label>' +
+      '<select id="qcF2"><option>日常记录</option><option>城市探索</option><option>创作幕后</option><option>手作DIY</option><option>其他题材</option></select>' +
+      '<label for="qcF3">联系方式</label>' +
+      '<input id="qcF3" type="text" placeholder="邮箱或手机号，仅用于评审通知">' +
+      '<label for="qcF4">一句话介绍</label>' +
+      '<textarea id="qcF4" placeholder="简单说明你的创作思路"></textarea>' +
+      '<div class="qc-modal-actions">' +
+      '<button class="qc-btn qc-btn-line" type="button" data-qc-close>取消</button>' +
+      '<button class="qc-btn qc-btn-dark" type="button" id="qcSubmitOk">提交报名</button>' +
+      '</div>'
+    );
+    var okBtn = document.getElementById('qcSubmitOk');
+    okBtn.addEventListener('click', function(){
+      var t = document.getElementById('qcF1').value.trim();
+      if(!t){ toast('请先填写作品标题'); return; }
+      closeModal();
+      toast('报名信息已提交，请留意站内评审通知');
+    });
+  }
+
+  function modalComment(){
+    openModal(
+      '<h3>发表评论</h3>' +
+      '<p>友善、具体的评论更容易被作者看到。请勿发布广告与未经授权的转载内容。</p>' +
+      '<label for="qcC1">你的昵称</label>' +
+      '<input id="qcC1" type="text" placeholder="例如：半夜剪片的人">' +
+      '<label for="qcC2">评论内容</label>' +
+      '<textarea id="qcC2" placeholder="说说你最喜欢哪个镜头"></textarea>' +
+      '<div class="qc-modal-actions">' +
+      '<button class="qc-btn qc-btn-line" type="button" data-qc-close>取消</button>' +
+      '<button class="qc-btn qc-btn-dark" type="button" id="qcCommentOk">发布评论</button>' +
+      '</div>'
+    );
+    document.getElementById('qcCommentOk').addEventListener('click', function(){
+      var txt = document.getElementById('qcC2').value.trim();
+      if(!txt){ toast('评论内容不能为空'); return; }
+      closeModal();
+      toast('评论已提交，审核通过后展示');
+    });
+  }
+
+  function modalJoin(){
+    openModal(
+      '<h3>加入社区</h3>' +
+      '<p>加入后可获得每日赛题提醒、创作门诊直播通知与新人推荐位申请资格。我们不会向第三方透露你的联系方式。</p>' +
+      '<label for="qcJ1">昵称</label>' +
+      '<input id="qcJ1" type="text" placeholder="你在社区想用的名字">' +
+      '<label for="qcJ2">擅长方向</label>' +
+      '<select id="qcJ2"><option>日常记录</option><option>城市探索</option><option>教程干货</option><option>手作DIY</option><option>还在探索</option></select>' +
+      '<div class="qc-modal-actions">' +
+      '<button class="qc-btn qc-btn-line" type="button" data-qc-close>稍后再说</button>' +
+      '<button class="qc-btn qc-btn-fluo" type="button" id="qcJoinOk">确认加入</button>' +
+      '</div>'
+    );
+    document.getElementById('qcJoinOk').addEventListener('click', function(){
+      var n = document.getElementById('qcJ1').value.trim();
+      if(!n){ toast('请填写一个昵称'); return; }
+      closeModal();
+      toast('欢迎加入，赛题提醒已开启');
+    });
+  }
+
+  function modalAuthor(name){
+    var map = {
+      '林間小满': '<h3>林間小满 · 日常记录</h3><p>二线城市设计师，2021 年参加第 3 期后成为常驻创作者。擅长固定机位与长时间记录，作品以出租屋、阳台与通勤视角为主。</p><p>代表作品：《窗上的霜花在六点十七分融化》《在 12 平米出租屋，我给自己搭了一个春天》。连续参加 31 期，入选精品内容 9 次。</p><p>创作者寄语：设备会更新，耐心不会。</p>',
+      '剪辑台老周': '<h3>剪辑台老周 · 教程干货</h3><p>五年商业剪辑经验，转型做创作复盘。每周更新一期结构拆解，主张「剪辑是删减的艺术」，作品被社区收藏最多。</p><p>代表作品：《我把 60 秒短片剪了 27 版，前 26 版错在哪》。参与创作门诊直播 18 场，累计答疑超过 600 条。</p><p>创作者寄语：先把故事讲清楚，再谈风格。</p>',
+      '木作小院': '<h3>木作小院 · 手作DIY</h3><p>在城郊租下带院子的老屋，做木作也拍木作。视频保留失败与返工段落，偏好自然声与长镜头。</p><p>代表作品：《用一块旧地板，做一把每天都会用的木勺》。作品进入第 47 期手作类重点推荐。</p><p>创作者寄语：手作的魅力在于不可复制。</p>',
+      '半格胶片': '<h3>半格胶片 · 城市探索</h3><p>纪录片摄影出身，偏爱城市缝隙题材。坚持先录声音再想画面，作品多为无解说环境声短片。</p><p>代表作品：《雨夜十点半，我跟着末班公交走了三站》。曾获第 42 期评审团特别推荐。</p><p>创作者寄语：城市不需要旁白。</p>'
+    };
+    openModal(map[name] || ('<h3>' + name + '</h3><p>完整创作者档案正在整理中，可先关注其作品列表。</p>'));
+  }
+
+  function modalContact(){
+    openModal(
+      '<h3>联系我们</h3>' +
+      '<p>商务合作、命题共创与媒体联络请通过以下方式提交，我们会在 2 个工作日内回复。</p>' +
+      '<label for="qcM1">联系人 / 机构</label>' +
+      '<input id="qcM1" type="text" placeholder="姓名与机构名称">' +
+      '<label for="qcM2">合作类型</label>' +
+      '<select id="qcM2"><option>品牌命题共创</option><option>内容授权与展映</option><option>创作者联动</option><option>其他咨询</option></select>' +
+      '<label for="qcM3">需求说明</label>' +
+      '<textarea id="qcM3" placeholder="简要描述合作背景与预期"></textarea>' +
+      '<div class="qc-modal-actions">' +
+      '<button class="qc-btn qc-btn-line" type="button" data-qc-close>取消</button>' +
+      '<button class="qc-btn qc-btn-dark" type="button" id="qcContactOk">提交需求</button>' +
+      '</div>'
+    );
+    document.getElementById('qcContactOk').addEventListener('click', function(){
+      var c = document.getElementById('qcM1').value.trim();
+      if(!c){ toast('请填写联系人或机构名称'); return; }
+      closeModal();
+      toast('需求已收到，官方工作人员将尽快联系');
+    });
+  }
+
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-qc-close]')){ closeModal(); return; }
+    var trigger = e.target.closest('[data-qc-modal]');
+    if(!trigger) return;
+    var type = trigger.getAttribute('data-qc-modal');
+    if(e.target.tagName === 'A') e.preventDefault();
+    if(type === 'submit') modalSubmit();
+    else if(type === 'comment') modalComment();
+    else if(type === 'join') modalJoin();
+    else if(type === 'contact') modalContact();
+  });
+
+  document.addEventListener('click', function(e){
+    var ab = e.target.closest('[data-qc-author]');
+    if(ab){
+      modalAuthor(ab.getAttribute('data-qc-author'));
+    }
+  });
+
+  /* ===== 回到顶部 ===== */
+  var toTop = document.getElementById('qcToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520) toTop.classList.add('qc-on');
+    else toTop.classList.remove('qc-on');
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+</body>
+  </html>
